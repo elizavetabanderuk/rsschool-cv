@@ -9,7 +9,7 @@
 * GitHub: [elizavetabanderuk](https://github.com/elizavetabanderuk)  
   
 ## Profile   
-I've been an international affairs manager for 4 years, working with partners from America, Europe and Asia. I have C1 level in English and a lot of expertise in spoken and written communication.   
+I've been an international affairs manager for 5 years, working with partners from America, Europe and Asia. I have C1 level in English and a lot of expertise in spoken and written communication.   
 Now I am studying to become a frontend developer. I believe my business knowledge and experience will help me succeed in this job.   
 
 ## Skills  
