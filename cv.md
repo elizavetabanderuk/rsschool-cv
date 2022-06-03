@@ -21,17 +21,34 @@ Now I am studying to become a frontend developer. I believe my business knowledg
  
 ## Code example   
 ```  
-def find_prices_for_state_procurement_procedure2(qty_total, sum_total): 
-    price1 = round(sum_total/1.1/qty_total, 2) 
-    qty1 = 1 
-    while qty1 <= qty_total: 
-        qty2 = qty_total - qty1 
-        price2 = (sum_total - qty1 * price1 * 1.1) / 1.1 / qty2 
-        if price2 % round(price2, 2) < 0.0000005: 
-            return ("Количество 1 = " + str(qty1)) 
-        qty1 = qty1 + 1 
+var fs = require('fs');
+
+const path = require('path');
+
+var myPath = path.join(__dirname,'secret-folder');
+
+let rs = function() {
+    return fs.promises.readdir(myPath).then(token => { return token } )
+  }
   
-print (find_prices_for_state_procurement_procedure2(209000, 21829.93))  
+  let userToken = rs();
+  
+  userToken.then(function(result) {
+     console.log(result)
+     for (let i = 0; i < result.length; i++) {
+         let Path = path.join(__dirname,'secret-folder',result[i]);
+        
+     fs.stat(Path,(err,stats)=>{
+         if (err) {
+             return console.log(err);
+         } else if (stats.isFile()) {
+             let newResult = result[i].split(".");
+            console.log(newResult[0] + ' - ' + newResult[1] + ' - ' + stats.size/1000 + 'kb');
+         }
+         
+     })
+  }
+}) 
 ``` 
  
 ## Education 
