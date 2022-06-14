@@ -2,7 +2,163 @@
     font-family: Montserrat;
      src: url("assets/fonts/Montserrat-SemiBold.ttf");
    }
-  @font-face {
+
+@font-face {
     font-family: Quicksand;
      src: url("assets/fonts/Quicksand-Light.ttf");
    }
+
+   .body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FAFAF8;
+    }
+    
+    .section-title {
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      letter-spacing: 1pt;
+      font-size: 26px;
+      line-height: 0.5;
+    }
+
+    .hr1 {
+      border: none; 
+      background-color: #FAFAF8; 
+      color: #FAFAF8; 
+      height: 4px; 
+      width:100px;
+    }
+
+    .hr2 {
+      border: none; 
+      background-color: #41445A; 
+      color: #41445A; 
+      height: 4px; 
+      width:100px;
+    }
+
+    .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    height: 60px;
+    background: #FAFAF5;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    gap: 10px;
+    }
+
+    a:link {
+      text-decoration: none;
+      color: black;
+      transition: .0.5s;
+    }
+    a:visited { color: rgb(8, 95, 22); }
+    a:hover { background: rgb(238, 222, 183); }
+    a:active { color: rgb(3, 0, 0); } 
+
+    .div {
+    flex: 1;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+    justify-content: center;
+    }
+
+    .main1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: #FAFAF7;
+    margin: 0;
+    gap: 20px;
+    padding: 0;
+    font-family: Quicksand, sans-serif;
+    }
+
+    .main2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #41445A;
+    gap: 3px;
+    padding: 20px;
+    font-family: Quicksand, sans-serif;
+    color: white;
+    width: 50%;
+    height: inherit;
+    }
+
+    .main3{
+      height: inherit;
+    }
+    
+    .code{
+    font-family: Quicksand, sans-serif;  
+    font-size: small;
+    font-weight: 300;
+    background-color: rgb(252, 249, 249);
+    width: 47%;
+    color: rgb(3, 92, 133);
+    border: solid;
+    border-color: black;
+    }
+
+    .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FAFAF7;
+    padding: 5px;
+    height: 60px;
+    font-family: Montserrat, sans-serif;
+    }
+
+    td, 
+    th {
+      padding: 5px;
+      width: 140px;
+      border: double;
+      border-width: 2px;
+    }
+
+    .code {
+      font-family: "Quicksand, sans-serif;";
+      font-size: 90%;
+      line-height: 0.8;
+      white-space: pre-wrap;
+      width: auto;
+    }
+
+    a:link {
+      text-decoration: none;
+      cursor: pointer;
+      transition: 1s;
+      color: inherit;
+    }
+
+    a:visited { color: inherit;}
+    a:hover { color: rgb(3, 92, 133); }
+    a:active { color: rgb(3, 92, 133);}
+
+    
+    @media (max-width: 768px) {
+        .body {
+          width: 100%;
+        }
+      }
+  
+    
