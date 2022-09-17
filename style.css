@@ -111,6 +111,10 @@
     height: inherit;
   }
 
+  .tr-title{
+    font-weight: bold;
+  }
+  
   .ed-list{
     list-style: none;
   } 
