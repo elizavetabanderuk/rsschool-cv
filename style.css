@@ -135,6 +135,10 @@
     border-width: 2px;
   }
 
+  i{
+    margin-left: 5px;
+  }
+
   .code {
     font-family: "Quicksand, sans-serif;";
     font-size: 90%;
