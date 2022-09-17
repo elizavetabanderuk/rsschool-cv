@@ -22,6 +22,12 @@
   margin-right: auto;
   background-color: #FAFAF8;
   }
+
+  .photo{
+    height: 150px;
+    width: 150px;
+    border-radius: 25px;
+  }
   
   .section-title {
     font-family: Montserrat, sans-serif;
@@ -103,6 +109,22 @@
 
   .main3{
     height: inherit;
+  }
+
+  .ed-list{
+    list-style: none;
+  } 
+
+  .pr-list{
+    text-transform: uppercase";
+  }
+
+  .st-code{
+    font-size: 70%;
+  }
+
+  .pr-links{
+    font-weight: 600;
   }
   
   .code{
